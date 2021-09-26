@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    height: 400px;
+    width: 100%;
+    background-color:thistle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 250px;
+    width: 20%;
+    background-color: dodgerblue;
+}
+
+.card1{
+    background-color: red;
+}
+
+.card2{
+    background-color: blue;
+}
+
+.card3{
+    background-color: green;
+}
+
+.card4{
+    background-color: yellow;
+}
+
+.card5{
+    background-color: purple;
+}
+
+
+@media(max-width:480px)
+{
+    .card{
+        width: 100%;
+    }
+}
