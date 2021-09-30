@@ -1,0 +1,414 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+   width: 100%;
+   background-color: rgba(175, 218, 233,0.3);
+   display: flex;
+   justify-content:center;
+   position: fixed;
+}
+
+.container{
+   width: 70%;
+   /* height: 60px; */
+   /* background-color: rgb(238, 49, 112); */
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.logo{
+   width: 20%;
+   height: 60px;
+   /* background-color: black; */
+   font-size: 33px;
+   font-weight: bold;
+   font-family: serif;
+   color: black;
+   text-align: center;
+}
+
+.nav{
+   width: 60%;
+   /* height: 60px; (if we donot give height to the parent it automatically depends on child)*/
+   /* background-color:black; */
+}
+
+.nav-parent{
+   display: flex;
+   /* flex-wrap: wrap; */
+}
+
+.nav-link{
+   list-style-type: none;
+   width: 23%;
+   height: 60px;
+   /* background-color: blanchedalmond; */
+   line-height: 60px;
+   font-family: sans-serif;
+   font-size: 17px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.nav-link:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.banner{
+    width: 100%;
+    height: 85vh;
+    background-color: burlywood;
+    background-image: url('https://travelmail.in/wp-content/uploads/2021/03/pexels-godson-bright-962464.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+.banner-desc{
+    height: 250px;
+    width: 40%;
+    /* background-color: rgba(236, 225, 181, 0.3); */
+    font-size: 40px;
+    font-family: cursive;
+    display: inline-block;
+    margin-top: 90px;
+    margin-left: 420px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.btn{
+    padding: 15px 30px;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    background-color:lightskyblue;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: mediumaquamarine;
+}
+
+/* css for places */
+.places{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: lightyellow;
+    display: flex;
+    justify-content: center;
+}
+
+.places-container{
+    width: 80%;
+    /* background-color: black; */
+    /* color: blanchedalmond; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: normal;
+}
+
+.places-parent{
+    width: 100%;
+    /* background-color:darkcyan; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.place{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+    overflow: hidden;
+    /* background-color: lightgray; */
+}
+
+.place1{
+    background-image: url('https://keralatourism.travel/images/destinations/headers/alleppey-kerala-tourism-entry-fee-timings-holidays-reviews-header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.place-desc{
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.place-desc:hover{
+    height: 400px;
+}
+
+.padd{
+    padding: 20px;
+}
+
+.place-title{
+    font-size: 30px;
+    font-family: inherit;
+}
+
+.places-btn{
+    padding: 15px 30px;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    background-color:rgba(0,0,0,0.3);
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+    color: white;
+}
+
+.places-btn:hover{
+    background-color:rgba(28, 156, 150,0.5);
+    color:black
+}
+
+.place2{
+    background-image: url('https://en-media.thebetterindia.com/uploads/2019/01/1200px-DR0071DSC_9245.jpg');
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+}
+
+.place3{
+    background-image: url('https://s3.india.com/travel/wp-content/uploads/2017/01/kumarakom-625x470.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -70px;
+}
+
+.place4{
+    font-size: unset;
+    background-image: url('https://yometro.com/images/places/sargaalya-kerela-art.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.place5{
+    background-image: url('https://lh3.googleusercontent.com/proxy/TWY8qrszuj5nTnHX8C0AnjCksHpzF1Q9Yj2JQ6hreIyqKOs_KNMISfMKNI6gXj_E8JMTxrYY3H8qqe8r8p0QTlzVuAjTKCQOflWDhcVLJ6xU5DkdSC4TOdCt');
+    background-size: cover;
+    background-position-x: -140px;
+}
+
+.place6{
+    background-image: url('https://lh3.googleusercontent.com/proxy/ItjHMaDp_sLCv3uQyjiHz2vPHdvdVdtfIwVc81jArZCq9kGsYnkERu-2lALkF1_sTw_TKDGwnu_nCCbdM_iSudFXR24HpEZz0oA');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.place7{
+    background-image: url('https://www.calculatedtraveller.com/wp-content/uploads/2021/01/Palakkad-palm-trees.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.place8{
+    background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/83385132.jpg?k=2badf8b2a7fe54d105380119a1c34e7c0bb74e5f3df5e92dd75c000625d6c15d&o=&hp=1');
+    background-size: cover;
+    background-position: center;
+}
+
+.place9{
+    background-image: url('https://www.tourmyindia.com/states/kerala/images/ashtamudi-beach-kollam-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.places-text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 20px;
+}
+
+.packages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.packages-1{
+    height: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.packages-title{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+    color: blue;
+}
+
+.packages-btn{
+    padding: 15px 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: rgba(36, 190, 183, 0.3);
+    border-radius: 20px;
+}
+
+.packages-btn:hover{
+    background-color: rgba(24, 230, 219, 0.4);
+}
+
+.contact{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-div{
+    height: 125px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info{
+    font-size: 35px;
+    font-family: monospace;
+    font-weight: bold;
+    color: orangered;
+}
+
+.contact-title{
+    font-size: 25px;
+    margin-top: 2px;
+    color: green;
+}
+
+.contact-btn{
+    padding: 15px 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: rgba(36, 190, 183, 0.3);
+    border-radius: 20px;
+}
+
+.contact-btn:hover{
+    background-color: rgba(24, 230, 219, 0.4);
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.about-div{
+    width: 80%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+.about-title{
+    font-size: 70px;
+    font-family: monospace;
+    font-weight: bold;
+    color: darkviolet;
+}
+
+.about-para{
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+/* css for mobile phone */
+@media(max-width:450px){
+
+    .header{
+        width: 100%;
+        background-color: lightseagreen;
+        position: static;
+    }
+
+   .container{
+       width: 100%;
+   }
+   .logo{
+       width: 100%;
+       height: 40px;
+       line-height: 40px;
+   }
+
+
+   .nav{
+       width: 20%;
+       height: auto;
+   }
+   
+   .nav-link{
+       font-size: 12px;
+       flex-direction: column;
+   }
+
+   .nav-link{
+       width: 100%;
+       box-shadow: 0 0 1px black;
+       line-height: 50px;
+       text-align: left;
+       text-indent: 18px;
+       height: 40px;
+       line-height: 40px;
+   }
+
+   .banner{
+       height: 50vh;
+       background-position-y: 0px;
+   }
+
+   .banner-desc{
+       width: 100%;
+       margin-left: 0px;
+       margin-top: 0px;
+       font-size: 30px;
+       padding: 0px;
+       margin-left: 2.5%;
+       padding: 0 10px;
+       height: 100%;
+   }
+
+   .place{
+       width: 100%;
+   }
+
+   .packages-title{
+       font-size: 25px;
+       font-weight: bold;
+   }
+}
